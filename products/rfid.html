@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID-учёт спецодежды и активов | ABITECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/logo.png" alt="ABITECH Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" data-i18n="home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#products" data-i18n="products">Продукты <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mobile-toir.html" data-i18n="mobile_mro">Мобильный ТОиР</a></li>
+                        <li><a href="rfid.html" data-i18n="rfid_workwear">RFID и спецодежда</a></li>
+                        <li><a href="ai-connector.html" data-i18n="ai_connector">ИИ-коннектор</a></li>
+                        <li><a href="wms.html" data-i18n="wms">WMS</a></li>
+                        <li><a href="bi.html" data-i18n="bi_solutions">BI-решения</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#industries" data-i18n="industries">Отрасли <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../industries/oil-gas.html" data-i18n="oil_gas_title">Нефтегаз</a></li>
+                        <li><a href="../industries/mining.html" data-i18n="mining">Угольная промышленность</a></li>
+                        <li><a href="../industries/metallurgy.html" data-i18n="metallurgy">Металлургия</a></li>
+                        <li><a href="../industries/logistics.html" data-i18n="logistics">Логистика</a></li>
+                        <li><a href="../industries/energy.html" data-i18n="energy">Энергетика</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#cases" data-i18n="cases">Кейсы</a></li>
+                <li><a href="../index.html#about" data-i18n="about_us">О компании</a></li>
+                <li><a href="#contacts" data-i18n="contacts">Контакты</a></li>
+                <li>
+                    <div class="lang-switcher" style="margin-left: 20px;">
+                        <span class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')" data-i18n="lang_ru">RU</span>|
+                        <span class="lang-btn" data-lang="kz" onclick="changeLanguage('kz')" data-i18n="lang_kz">KZ</span>|
+                        <span class="lang-btn" data-lang="en" onclick="changeLanguage('en')" data-i18n="lang_en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Block 1: Hero -->
+    <header class="hero hero-ppe">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>RFID-учёт спецодежды и активов без потерь</h1>
+            <p class="hero-subtitle">Автоматизация выдачи, возврата и инвентаризации с контролем в реальном времени</p>
+            <div class="hero-buttons">
+                <a href="#contacts" class="btn btn-primary" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="read_more">Подробнее</span>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- Block 2: Области применения -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Что мы маркируем и учитываем</h2>
+            <div class="grid-3">
+                <div class="card" style="text-align: center; padding: 32px;">
+                    <i class="ph ph-t-shirt" style="font-size: 48px; color: var(--primary); margin-bottom: 24px;"></i>
+                    <h3 style="font-size: 20px;">Спецодежда и СИЗ</h3>
+                    <p style="margin-top: 16px; color: var(--text-gray);">Автоматизация склада выдачи, точный контроль
+                        сроков носки.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 32px;">
+                    <i class="ph ph-wrench" style="font-size: 48px; color: var(--primary); margin-bottom: 24px;"></i>
+                    <h3 style="font-size: 20px;">Оборудование и инструменты</h3>
+                    <p style="margin-top: 16px; color: var(--text-gray);">Мониторинг перемещения, предотвращение краж и
+                        потерь на объектах.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 32px;">
+                    <i class="ph ph-warehouse" style="font-size: 48px; color: var(--primary); margin-bottom: 24px;"></i>
+                    <h3 style="font-size: 20px;">Склады и запасы</h3>
+                    <p style="margin-top: 16px; color: var(--text-gray);">Инвентаризация ТМЦ за считанные минуты без
+                        остановки работы склада.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 3: Техническое обеспечение -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Оборудование для RFID-учёта</h2>
+            <div class="grid-3">
+                <div class="card"
+                    style="text-align: center; padding: 32px; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <i class="ph ph-door" style="font-size: 48px; color: var(--primary); margin-bottom: 24px;"></i>
+                    <h3 style="font-size: 18px;">RFID-ворота</h3>
+                    <p style="margin-top: 16px; color: var(--text-gray); font-size: 14px;">Для автоматической фиксации
+                        массового прохода и перемещения активов.</p>
+                </div>
+                <div class="card"
+                    style="text-align: center; padding: 32px; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <i class="ph ph-device-mobile"
+                        style="font-size: 48px; color: var(--primary); margin-bottom: 24px;"></i>
+                    <h3 style="font-size: 18px;">Терминалы и считыватели</h3>
+                    <p style="margin-top: 16px; color: var(--text-gray); font-size: 14px;">Промышленные мобильные
+                        устройства для быстрой инвентаризации.</p>
+                </div>
+                <div class="card"
+                    style="text-align: center; padding: 32px; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <i class="ph ph-tag" style="font-size: 48px; color: var(--primary); margin-bottom: 24px;"></i>
+                    <h3 style="font-size: 18px;">Специализированные метки</h3>
+                    <p style="margin-top: 16px; color: var(--text-gray); font-size: 14px;">Устойчивые к промышленным
+                        стиркам, высоким температурам и агрессивной среде.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 4: Где используется -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Где используется</h2>
+            <div class="grid-3">
+                <a href="../industries/oil-gas.html" class="card"
+                    style="text-decoration: none; padding: 24px; text-align: center; color: inherit; display: block;">
+                    <i class="ph ph-drop" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3>Нефтегазовая промышленность</h3>
+                    <p style="margin-top: 8px; font-size: 14px; color: var(--primary);">Подробнее &rarr;</p>
+                </a>
+                <a href="../industries/metallurgy.html" class="card"
+                    style="text-decoration: none; padding: 24px; text-align: center; color: inherit; display: block;">
+                    <i class="ph ph-factory" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 data-i18n="metallurgy">Металлургия</h3>
+                    <p style="margin-top: 8px; font-size: 14px; color: var(--primary);">Подробнее &rarr;</p>
+                </a>
+                <a href="../industries/mining.html" class="card"
+                    style="text-decoration: none; padding: 24px; text-align: center; color: inherit; display: block;">
+                    <i class="ph ph-mountains" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h2 data-i18n="mining">Угольная промышленность</h2>
+                    <p style="margin-top: 8px; font-size: 14px; color: var(--primary);">Подробнее &rarr;</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5: CTA -->
+    <section class="section contact" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Узнайте стоимость RFID-маркировки</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Имя" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" required>
+                <input type="text" placeholder="Компания" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" required>
+                <input type="tel" placeholder="Телефон" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" required>
+                <input type="email" placeholder="Email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" required>
+                <button type="submit" class="btn btn-primary full-width" data-i18n="btn_discuss">Обсудить проект</button>
+            </form>
+            <div class="contact-links">
+                <a href="tel:#" data-i18n="phone">Телефон</a>
+                <a href="mailto:info@abitech.kz" data-i18n="email">Email</a>
+                <a href="https://wa.me/#">WhatsApp</a>
+                <a href="https://t.me/abitechkz" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="../i18n.js"></script>
+</body>
+
+</html>

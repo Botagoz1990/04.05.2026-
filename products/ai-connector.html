@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ-коннектор | Интеграция и обмен данными | ABITECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/logo.png" alt="ABITECH Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" data-i18n="home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#products" data-i18n="products">Продукты <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mobile-toir.html" data-i18n="mobile_mro">Мобильный ТОиР</a></li>
+                        <li><a href="rfid.html" data-i18n="rfid_workwear">RFID и спецодежда</a></li>
+                        <li><a href="ai-connector.html" data-i18n="ai_connector">ИИ-коннектор</a></li>
+                        <li><a href="wms.html" data-i18n="wms">WMS</a></li>
+                        <li><a href="bi.html" data-i18n="bi_solutions">BI-решения</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#industries" data-i18n="industries">Отрасли <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../industries/oil-gas.html" data-i18n="oil_gas_title">Нефтегаз</a></li>
+                        <li><a href="../industries/mining.html" data-i18n="mining">Угольная промышленность</a></li>
+                        <li><a href="../industries/metallurgy.html" data-i18n="metallurgy">Металлургия</a></li>
+                        <li><a href="../industries/logistics.html" data-i18n="logistics">Логистика</a></li>
+                        <li><a href="../industries/energy.html" data-i18n="energy">Энергетика</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#cases" data-i18n="cases">Кейсы</a></li>
+                <li><a href="../index.html#about" data-i18n="about_us">О компании</a></li>
+                <li><a href="#contacts" data-i18n="contacts">Контакты</a></li>
+                <li>
+                    <div class="lang-switcher" style="margin-left: 20px;">
+                        <span class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')" data-i18n="lang_ru">RU</span>|
+                        <span class="lang-btn" data-lang="kz" onclick="changeLanguage('kz')" data-i18n="lang_kz">KZ</span>|
+                        <span class="lang-btn" data-lang="en" onclick="changeLanguage('en')" data-i18n="lang_en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Block 1: Hero -->
+    <header class="hero hero-ai">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 data-i18n="data_integration_exchange">Интеграция и обмен данными между системами</h1>
+            <p class="hero-subtitle">Объединяем 1С, ERP, SAP и IoT-датчики в единую экосистему. Чистые данные для
+                правильных управленческих решений.</p>
+            <div class="hero-buttons">
+                <a href="#contacts" class="btn btn-primary" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="read_more">Подробнее</span>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- Block 2: Problems -->
+    <section class="section section-problems">
+        <div class="container">
+            <h2 class="section-title">С какими проблемами сталкиваются предприятия</h2>
+            <div class="grid-4">
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-desktop-tower"></i></div>
+                    <p class="problem-text">Разрозненные<br>ИТ-системы</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-copy"></i></div>
+                    <p class="problem-text">Дублирование<br>данных</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-warning"></i></div>
+                    <p class="problem-text">Ошибки и<br>несоответствия</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-chart-line-down"></i></div>
+                    <p class="problem-text">Отсутствие<br>сквозной аналитики</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 3: Solution -->
+    <section class="section section-solution">
+        <div class="container">
+            <h2 class="section-title">Как работает ИИ-коннектор от ABITECH</h2>
+            <div class="solution-container">
+                <p style="font-size: 18px; color: var(--text-gray); max-width: 800px; margin: 0 auto 40px;">
+                    Интеграционная платформа для унификации данных, валидации и аналитики между разнородными системами
+                    предприятия.
+                </p>
+                <style>
+                    .data-flow {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 16px;
+                        margin-top: 40px;
+                        background: #f8f9fa;
+                        padding: 32px;
+                        border-radius: 16px;
+                        border: 1px solid var(--border-color);
+                        flex-wrap: wrap;
+                    }
+
+                    .flow-block {
+                        flex: 1;
+                        min-width: 200px;
+                        background: var(--white);
+                        padding: 24px;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                        text-align: center;
+                    }
+
+                    .flow-block.main-node {
+                        background: var(--primary);
+                        color: var(--white);
+                        transform: scale(1.05);
+                    }
+
+                    .flow-arrow {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--primary);
+                    }
+
+                    .flow-list {
+                        list-style: none;
+                        padding: 0;
+                        margin: 16px 0 0 0;
+                        font-size: 14px;
+                        color: inherit;
+                        opacity: 0.9;
+                    }
+
+                    .flow-list li {
+                        margin-bottom: 8px;
+                    }
+
+                    @media (max-width: 768px) {
+                        .data-flow {
+                            flex-direction: column;
+                        }
+
+                        .flow-arrow {
+                            transform: rotate(90deg);
+                            margin: 16px 0;
+                        }
+                    }
+                </style>
+                <div class="data-flow">
+                    <div class="flow-block">
+                        <i class="ph ph-database"
+                            style="font-size: 32px; color: var(--primary); margin-bottom: 12px;"></i>
+                        <h3 style="font-size: 16px; font-weight: 600;">Источники</h3>
+                        <ul class="flow-list" style="color: var(--text-gray);">
+                            <li>1С / ERP</li>
+                            <li>SAP</li>
+                            <li>SCADA / АСУ ТП</li>
+                            <li>IoT-датчики</li>
+                        </ul>
+                    </div>
+                    <div class="flow-arrow">
+                        <i class="ph ph-arrow-right" style="font-size: 32px;"></i>
+                    </div>
+                    <div class="flow-block main-node">
+                        <i class="ph ph-cpu" style="font-size: 32px; margin-bottom: 12px;"></i>
+                        <h3 style="font-size: 18px; font-weight: 600; color: white;">ИИ-Коннектор</h3>
+                        <ul class="flow-list">
+                            <li>Сбор данных</li>
+                            <li>Валидация и очистка</li>
+                            <li>Маршрутизация</li>
+                        </ul>
+                    </div>
+                    <div class="flow-arrow">
+                        <i class="ph ph-arrow-right" style="font-size: 32px;"></i>
+                    </div>
+                    <div class="flow-block">
+                        <i class="ph ph-chart-bar"
+                            style="font-size: 32px; color: var(--primary); margin-bottom: 12px;"></i>
+                        <h3 style="font-size: 16px; font-weight: 600;">Потребители</h3>
+                        <ul class="flow-list" style="color: var(--text-gray);">
+                            <li>Аналитика</li>
+                            <li>BI-системы</li>
+                            <li>Нейросети (ИОД)</li>
+                            <li>DWH (Хранилища)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 4: Integrations -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Интеграция с системами</h2>
+            <div class="flex-center technologies-grid">
+                <div class="tech-logo">1С</div>
+                <div class="tech-logo">SAP</div>
+                <div class="tech-logo">ERP</div>
+                <div class="tech-logo" style="width: auto; padding: 0 16px;">Мобильные приложения</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5: Results -->
+    <section class="section section-results">
+        <div class="container">
+            <h2 class="section-title">Что получает бизнес</h2>
+            <div class="grid-3">
+                <div class="result-card" style="border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <div class="result-kpi"><i class="ph ph-database"></i></div>
+                    <p class="result-label">Единый источник<br>данных</p>
+                </div>
+                <div class="result-card" style="border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <div class="result-kpi"><i class="ph ph-check-circle"></i></div>
+                    <p class="result-label">Снижение ошибок<br>учёта</p>
+                </div>
+                <div class="result-card" style="border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    <div class="result-kpi"><i class="ph ph-rocket"></i></div>
+                    <p class="result-label">Основа для цифровой<br>трансформации</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 6: Examples -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Где используется</h2>
+            <div class="placeholder-block"
+                style="background:#f8f9fa; border:1px dashed var(--border-color); border-radius:12px; padding:48px; text-align:center; color:var(--text-gray);">
+                <i class="ph ph-briefcase" style="font-size:40px; margin-bottom:16px;"></i>
+                <h3 style="font-size:18px; margin-bottom:12px; color:var(--primary);">Кейсы применения в разработке</h3>
+                <p>Мы собираем наиболее релевантные проекты внедрения для публикации в этом разделе. Скоро здесь
+                    появится информация.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 7: CTA -->
+    <section class="section contact" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Обсудим интеграцию систем</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Имя" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" required>
+                <input type="text" placeholder="Компания" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" required>
+                <input type="tel" placeholder="Телефон" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" required>
+                <input type="email" placeholder="Email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" required>
+                <button type="submit" class="btn btn-primary full-width" data-i18n="btn_discuss">Обсудить проект</button>
+            </form>
+            <div class="contact-links">
+                <a href="tel:#" data-i18n="phone">Телефон</a>
+                <a href="mailto:info@abitech.kz" data-i18n="email">Email</a>
+                <a href="https://wa.me/#">WhatsApp</a>
+                <a href="https://t.me/abitechkz" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="../i18n.js"></script>
+</body>
+
+</html>
