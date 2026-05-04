@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Металлургия | Цифровая аналитика и интеграция | ABITECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/logo.png" alt="ABITECH Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" data-i18n="home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#products" data-i18n="products">Продукты <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../products/mobile-toir.html" data-i18n="mobile_mro">Мобильный ТОиР</a></li>
+                        <li><a href="../products/rfid.html" data-i18n="rfid_workwear">RFID и спецодежда</a></li>
+                        <li><a href="../products/ai-connector.html" data-i18n="ai_connector">ИИ-коннектор</a></li>
+                        <li><a href="../products/wms.html" data-i18n="wms">WMS</a></li>
+                        <li><a href="../products/bi.html" data-i18n="bi_solutions">BI-решения</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#industries" data-i18n="industries">Отрасли <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="oil-gas.html" data-i18n="oil_gas_title">Нефтегаз</a></li>
+                        <li><a href="mining.html" data-i18n="mining">Угольная промышленность</a></li>
+                        <li><a href="metallurgy.html" data-i18n="metallurgy">Металлургия</a></li>
+                        <li><a href="logistics.html" data-i18n="logistics">Логистика</a></li>
+                        <li><a href="energy.html" data-i18n="energy">Энергетика</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#cases" data-i18n="cases">Кейсы</a></li>
+                <li><a href="../about.html" data-i18n="about_us">О компании</a></li>
+                <li><a href="../contacts.html" data-i18n="contacts">Контакты</a></li>
+                <li>
+                    <div class="lang-switcher" style="margin-left: 20px;">
+                        <span class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')" data-i18n="lang_ru">RU</span>|
+                        <span class="lang-btn" data-lang="kz" onclick="changeLanguage('kz')" data-i18n="lang_kz">KZ</span>|
+                        <span class="lang-btn" data-lang="en" onclick="changeLanguage('en')" data-i18n="lang_en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Block 1: Hero -->
+    <header class="hero" style="background: url('../assets/hero-bg.png') no-repeat center center/cover;">
+        <div class="hero-overlay" style="background: rgba(30, 61, 55, 0.85);"></div>
+        <div class="container hero-content">
+            <h1 data-i18n="control_production_losses">Контроль производства и снижение потерь в металлургии</h1>
+            <p class="hero-subtitle">Интеграция систем, единая база данных и аналитика процессов</p>
+            <div class="hero-buttons">
+                <a href="#contacts" class="btn btn-primary" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="read_more">Подробнее</span>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- Block 2: Industry Pain Points -->
+    <section class="section section-problems" style="background: var(--bg-gradient-green);">
+        <div class="container">
+            <h2 class="section-title">Проблемы металлургического сектора</h2>
+            <div class="grid-4">
+                <div class="problem-item"
+                    style="background: var(--bg-light); padding: 24px; border-radius: var(--radius); text-align: center;">
+                    <div class="problem-icon"><i class="ph ph-git-merge"></i></div>
+                    <p class="problem-text">Разрозненные<br>производственные данные</p>
+                </div>
+                <div class="problem-item"
+                    style="background: var(--bg-light); padding: 24px; border-radius: var(--radius); text-align: center;">
+                    <div class="problem-icon"><i class="ph ph-eye-slash"></i></div>
+                    <p class="problem-text">Отсутствие системы<br>единого контроля</p>
+                </div>
+                <div class="problem-item"
+                    style="background: var(--bg-light); padding: 24px; border-radius: var(--radius); text-align: center;">
+                    <div class="problem-icon"><i class="ph ph-chart-line-down"></i></div>
+                    <p class="problem-text">Сложность анализа<br>производственных потерь</p>
+                </div>
+                <div class="problem-item"
+                    style="background: var(--bg-light); padding: 24px; border-radius: var(--radius); text-align: center;">
+                    <div class="problem-icon"><i class="ph ph-cpu"></i></div>
+                    <p class="problem-text">Неэффективное использование<br>мощностей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 3: Solutions -->
+    <section class="section products">
+        <div class="container">
+            <h2 class="section-title">Решения ABITECH для металлургии</h2>
+            <div class="grid-4">
+                <div class="card product-card">
+                    <i class="ph ph-plugs-connected"
+                        style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3>Интеграция систем</h3>
+                    <p>Сбор данных с датчиков и оборудования в единую систему</p>
+                    <a href="../products/ai-connector.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <div class="card product-card">
+                    <i class="ph ph-brain" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3>ИИ-аналитика</h3>
+                    <p>Анализ производственных циклов и поиск узких мест</p>
+                    <a href="../products/ai-connector.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <div class="card product-card">
+                    <i class="ph ph-desktop" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3>Диспетчеризация</h3>
+                    <p>Контроль выпуска продукции в реальном времени</p>
+                    <a href="../products/mobile-toir.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <div class="card product-card">
+                    <i class="ph ph-thermometer"
+                        style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3>Контроль ТОиР</h3>
+                    <p>Планирование ремонтов плавильных агрегатов</p>
+                    <a href="../products/mobile-toir.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 4: Results -->
+    <section class="section section-results" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Результат для бизнеса</h2>
+            <div class="grid-3">
+                <div class="result-card"
+                    style="background: var(--white); padding: 32px; border-radius: var(--radius); text-align: center;">
+                    <div class="result-kpi"
+                        style="font-size: 48px; font-weight: 700; color: var(--primary); margin-bottom: 8px;">+12%</div>
+                    <p class="result-label">Повышение общей эффективности (OEE)</p>
+                </div>
+                <div class="result-card"
+                    style="background: var(--white); padding: 32px; border-radius: var(--radius); text-align: center;">
+                    <div class="result-kpi"
+                        style="font-size: 48px; font-weight: 700; color: var(--primary); margin-bottom: 8px;">100%</div>
+                    <p class="result-label">Точность производственных данных</p>
+                </div>
+                <div class="result-card"
+                    style="background: var(--white); padding: 32px; border-radius: var(--radius); text-align: center;">
+                    <div class="result-kpi"
+                        style="font-size: 48px; font-weight: 700; color: var(--primary); margin-bottom: 8px;">-20%</div>
+                    <p class="result-label">Сокращение внеплановых простоев</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5: Contact Section -->
+    <section class="section contact" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Обсудим проект для Металлургии</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Имя" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" required>
+                <input type="text" placeholder="Компания" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" required>
+                <input type="tel" placeholder="Телефон" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" required>
+                <input type="email" placeholder="Email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" required>
+                <button type="submit" class="btn btn-primary full-width">Получить консультацию</button>
+            </form>
+            <div class="contact-links">
+                <a href="tel:#" data-i18n="phone">Телефон</a>
+                <a href="mailto:info@abitech.kz" data-i18n="email">Email</a>
+                <a href="https://wa.me/#">WhatsApp</a>
+                <a href="https://t.me/abitechkz" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+
+
+    <script src="../i18n.js"></script>
+</body>
+
+</html>

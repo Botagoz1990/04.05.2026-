@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логистика и склады - ABITECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/logo.png" alt="ABITECH Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" data-i18n="home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="../index.html#products" data-i18n="products">Продукты <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../products/mobile-toir.html" data-i18n="mobile_mro">Мобильный ТОиР</a></li>
+                        <li><a href="../products/rfid.html" data-i18n="rfid_workwear">RFID и спецодежда</a></li>
+                        <li><a href="../products/ai-connector.html" data-i18n="ai_connector">ИИ-коннектор</a></li>
+                        <li><a href="../products/wms.html" data-i18n="wms">WMS</a></li>
+                        <li><a href="../products/bi.html" data-i18n="bi_solutions">BI-решения</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../index.html#industries" data-i18n="industries">Отрасли <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="oil-gas.html" data-i18n="oil_gas_title">Нефтегаз</a></li>
+                        <li><a href="mining.html" data-i18n="mining">Угольная промышленность</a></li>
+                        <li><a href="metallurgy.html" data-i18n="metallurgy">Металлургия</a></li>
+                        <li><a href="logistics.html" data-i18n="logistics">Логистика</a></li>
+                        <li><a href="energy.html" data-i18n="energy">Энергетика</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#cases" data-i18n="cases">Кейсы</a></li>
+                <li><a href="../about.html" data-i18n="about_us">О компании</a></li>
+                <li><a href="../contacts.html" data-i18n="contacts">Контакты</a></li>
+                <li>
+                    <div class="lang-switcher" style="margin-left: 20px;">
+                        <span class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')" data-i18n="lang_ru">RU</span>|
+                        <span class="lang-btn" data-lang="kz" onclick="changeLanguage('kz')" data-i18n="lang_kz">KZ</span>|
+                        <span class="lang-btn" data-lang="en" onclick="changeLanguage('en')" data-i18n="lang_en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Block 1: Hero -->
+    <header class="hero hero-logistics">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 data-i18n="control_warehouse_operations">Контроль складских операций и снижение потерь</h1>
+            <p class="hero-subtitle">Внедрение WMS и IoT-контроль складских операций</p>
+            <div class="hero-buttons">
+                <a href="#contacts" class="btn btn-primary" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="read_more">Подробнее</span>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- Block 2: Industry Pain Points -->
+    <section class="section section-problems">
+        <div class="container">
+            <h2 class="section-title">Проблемы логистического сектора</h2>
+            <div class="grid-4">
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-warning-circle"></i></div>
+                    <p class="problem-text">Ошибки комплектации<br>и человеческий фактор</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-package"></i></div>
+                    <p class="problem-text">Потери товаров<br>и пересортица</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-clock"></i></div>
+                    <p class="problem-text">Длительный поиск<br>ТМЦ на складе</p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon"><i class="ph ph-files"></i></div>
+                    <p class="problem-text">Сложность инвентаризации<br>и расхождения в учёте</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 3: Solutions -->
+    <section class="section products">
+        <div class="container">
+            <h2 class="section-title">Решения ABITECH для логистики</h2>
+            <div class="grid-4">
+                <div class="card product-card">
+                    <h3>WMS Система</h3>
+                    <p>Полное управление складскими процессами</p>
+                    <a href="../products/wms.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <div class="card product-card">
+                    <h3>RFID-трекинг</h3>
+                    <p>Мгновенная инвентаризация и поиск</p>
+                    <a href="../products/rfid.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <div class="card product-card">
+                    <h3>ИИ-оптимизация</h3>
+                    <p>Прогнозирование запасов и спроса</p>
+                    <a href="../products/ai-connector.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <div class="card product-card">
+                    <h3>Мобильные ТСД</h3>
+                    <p>Приложения для кладовщиков</p>
+                    <a href="../products/mobile-toir.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 4: Results -->
+    <section class="section section-results">
+        <div class="container">
+            <h2 class="section-title">Результат автоматизации</h2>
+            <div class="grid-3">
+                <div class="result-card">
+                    <div class="result-kpi"><i class="ph ph-speedometer"></i></div>
+                    <p class="result-label">Ускорение отгрузок<br>в 3-5 раз</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-kpi"><i class="ph ph-check-circle"></i></div>
+                    <p class="result-label">Точность учёта<br>до 99.9%</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-kpi"><i class="ph ph-money"></i></div>
+                    <p class="result-label">Снижение затрат<br>на персонал</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5: Cases Section -->
+    <section class="section cases" id="cases" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="cases_and_results">Кейсы и результаты</h2>
+            <div class="grid-2" style="max-width: 900px; margin: 0 auto;">
+                <!-- Case 1: Logistics -->
+                <div class="case-card">
+                    <div class="case-stat-badge">0%</div>
+                    <h3>Логистика / АСКОУ-Склад</h3>
+                    <div class="case-content" style="margin-top: 20px;">
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="task">Задача</span>
+                            <div class="case-text">Контроль материальных потоков, исключение пересортицы и ошибок при
+                                отгрузке.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="solution">Решение</span>
+                            <div class="case-text">Модуль АСКОУ-Склад (WMS) с интеграцией IoT-датчиков и RFID-ворот.
+                            </div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="result">Результат</span>
+                            <div class="case-text">0% аварийных ситуаций и ошибок отгрузки. Полный контроль перемещений.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2: Distribution Center -->
+                <div class="case-card">
+                    <div class="case-stat-badge">х3</div>
+                    <h3>Дистрибуция / Запуск WMS</h3>
+                    <div class="case-content" style="margin-top: 20px;">
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="task">Задача</span>
+                            <div class="case-text">Оптимизация скорости сборки заказов в крупном распределительном
+                                центре.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="solution">Решение</span>
+                            <div class="case-text">Внедрение WMS-системы и использование мобильных ТСД для персонала
+                                склада.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="result">Результат</span>
+                            <div class="case-text">Ускорение отгрузок в 3 раза, исключение просрочек и человеческого
+                                фактора.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 6: Contact Section -->
+    <section class="section contact" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Обсудим проект для Логистики</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Имя" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" required>
+                <input type="text" placeholder="Компания" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" required>
+                <input type="tel" placeholder="Телефон" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" required>
+                <input type="email" placeholder="Email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" required>
+                <button type="submit" class="btn btn-primary full-width">Получить консультацию</button>
+            </form>
+            <div class="contact-links">
+                <a href="tel:#" data-i18n="phone">Телефон</a>
+                <a href="mailto:info@abitech.kz" data-i18n="email">Email</a>
+                <a href="https://wa.me/#">WhatsApp</a>
+                <a href="https://t.me/abitechkz" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="../i18n.js"></script>
+</body>
+
+</html>
