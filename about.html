@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании | ABITECH — Интегратор №1 в Казахстане</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="ABITECH Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="index.html#products" data-i18n="products">Продукты <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products/mobile-toir.html" data-i18n="mobile_mro">Мобильный ТОиР</a></li>
+                        <li><a href="products/rfid.html" data-i18n="rfid_workwear">RFID и спецодежда</a></li>
+                        <li><a href="products/ai-connector.html" data-i18n="ai_connector">ИИ-коннектор</a></li>
+                        <li><a href="products/wms.html" data-i18n="wms">WMS</a></li>
+                        <li><a href="products/bi.html" data-i18n="bi_solutions">BI-решения</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#industries" data-i18n="industries">Отрасли <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="industries/oil-gas.html" data-i18n="oil_gas_title">Нефтегаз</a></li>
+                        <li><a href="industries/mining.html" data-i18n="mining">Угольная промышленность</a></li>
+                        <li><a href="industries/metallurgy.html" data-i18n="metallurgy">Металлургия</a></li>
+                        <li><a href="industries/logistics.html" data-i18n="logistics">Логистика</a></li>
+                        <li><a href="industries/energy.html" data-i18n="energy">Энергетика</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#cases" data-i18n="cases">Кейсы</a></li>
+                <li><a href="about.html" data-i18n="about_us">О компании</a></li>
+                <li><a href="contacts.html" data-i18n="contacts">Контакты</a></li>
+                <li>
+                    <div class="lang-switcher" style="margin-left: 20px;">
+                        <span class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')" data-i18n="lang_ru">RU</span>|
+                        <span class="lang-btn" data-lang="kz" onclick="changeLanguage('kz')" data-i18n="lang_kz">KZ</span>|
+                        <span class="lang-btn" data-lang="en" onclick="changeLanguage('en')" data-i18n="lang_en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Block 1: Hero -->
+    <header class="hero hero-about">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 data-i18n="about_us">О компании</h1>
+            <p class="hero-subtitle" data-i18n="abitech_leading">ABiTech — ведущий разработчик решений для цифрового управления активами, ТОиР и безопасности в промышленности.</p>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="scroll_down">Скролл вниз</span>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- Block 2: Mission & Vision -->
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="mission-box reveal-on-scroll">
+                <h2 data-i18n="mission_vision">Миссия и видение</h2>
+                <h3 style="color: var(--accent); margin-top: 30px; font-size: 24px; margin-bottom: 12px;" data-i18n="mission">Миссия</h3>
+                <p data-i18n="we_create_transparent">Мы создаем прозрачную цифровую среду для управления промышленными активами, помогая компаниям исключать потери, предотвращать аварии и повышать эффективность персонала.</p>
+                
+                <h3 style="color: var(--accent); margin-top: 30px; font-size: 24px; margin-bottom: 12px;" data-i18n="vision">Видение</h3>
+                <p data-i18n="become_standard">Стать технологическим стандартом в цифровизации производственных процессов на рынке Центральной Азии и за ее пределами.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 3: History Timeline -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll" data-i18n="company_history">История компании</h2>
+            <p class="section-subtitle reveal-on-scroll" data-i18n="key_milestones">Ключевые вехи</p>
+            
+            <div class="timeline">
+                <div class="timeline-item left reveal-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="year_2003">2003 год</div>
+                        <p class="timeline-text" data-i18n="foundation_abitech">Основание ТОО «Advanced Business Technologies» (ABiTech). Старт деятельности как системного интегратора в сфере IT.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="years_2010_2015">2010–2015 гг.</div>
+                        <p class="timeline-text" data-i18n="transition_software">Переход к собственной разработке ПО. Запуск системы АСКОУ (Автоматизированная система контроля и оперативного учета). Начало активной работы с крупными промышленными предприятиями Казахстана.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left reveal-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="years_2018_2021">2018–2021 гг.</div>
+                        <p class="timeline-text" data-i18n="scaling_rfid">Масштабирование экспертизы в RFID-технологии и IoT. Разработка уникальных решений для нефтегазового сектора и угольной промышленности.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="year_2022">2022 год</div>
+                        <p class="timeline-text" data-i18n="international_recognition">Международное признание. Проект «АСКОУ – Бутик» становится финалистом престижной премии RFID Journal Award 2022.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left reveal-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-year" data-i18n="today">Сегодня</div>
+                        <p class="timeline-text" data-i18n="abitech_leading">ABiTech — ведущий разработчик решений для цифрового управления активами, ТОиР и безопасности в промышленности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 4: Team -->
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll" data-i18n="team">Команда</h2>
+            <div class="team-grid">
+                <div class="team-card reveal-on-scroll">
+                    <div class="team-photo" style="background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+                        <i class="ph ph-user" style="font-size: 80px; color: #ccc;"></i>
+                    </div>
+                    <div class="team-info">
+                        <div class="team-name" data-i18n="ravshan_rakhmatullaev">Рахматуллаев Равшан Джураевич</div>
+                        <div class="team-role" data-i18n="director_abitech">Директор ТОО «ABiTech». Идейный вдохновитель и стратег.</div>
+                    </div>
+                </div>
+                <div class="team-card reveal-on-scroll">
+                    <div class="team-photo" style="background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+                        <i class="ph ph-user" style="font-size: 80px; color: #ccc;"></i>
+                    </div>
+                    <div class="team-info">
+                        <div class="team-name" data-i18n="timur_ismagilov">Тимур Исмагилов</div>
+                        <div class="team-role" data-i18n="branch_director">Директор филиала (г. Астана). Куратор ключевых промышленных внедрений и взаимодействия с государственным сектором.</div>
+                    </div>
+                </div>
+                <div class="team-card reveal-on-scroll">
+                    <div class="team-photo" style="background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+                        <i class="ph ph-user" style="font-size: 80px; color: #ccc;"></i>
+                    </div>
+                    <div class="team-info">
+                        <div class="team-name" data-i18n="nurym_gabbas">Нурым Габбас</div>
+                        <div class="team-role" data-i18n="financial_director">Финансовый директор</div>
+                    </div>
+                </div>
+                <div class="team-card reveal-on-scroll">
+                    <div class="team-photo" style="background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+                        <i class="ph ph-user" style="font-size: 80px; color: #ccc;"></i>
+                    </div>
+                    <div class="team-info">
+                        <div class="team-name" data-i18n="shamuratov_kanat">Шамуратов Канат</div>
+                        <div class="team-role" data-i18n="head_project_managers">Начальник отдела менеджеров проектов</div>
+                    </div>
+                </div>
+                <div class="team-card reveal-on-scroll">
+                    <div class="team-photo" style="background-color: #f8f9fa; display: flex; align-items: center; justify-content: center;">
+                        <i class="ph ph-user" style="font-size: 80px; color: #ccc;"></i>
+                    </div>
+                    <div class="team-info">
+                        <div class="team-name" data-i18n="titenko_vladimir">Титенко Владимир</div>
+                        <div class="team-role" data-i18n="head_development">Начальник отдела разработки</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5: Partners and Vendors -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll" data-i18n="partners_technology_vendors">Партнёры и технологические вендоры</h2>
+            <p class="section-subtitle reveal-on-scroll" style="margin-top: -30px; margin-bottom: 50px;" data-i18n="we_integrate_solutions">Мы интегрируем наши решения с мировыми лидерами:</p>
+            
+            <div class="technologies-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div class="tech-logo reveal-on-scroll" style="width: 120px; height: 120px; font-size: 24px; color: var(--primary); background: var(--bg-light);">
+                    1С
+                </div>
+                <div class="tech-logo reveal-on-scroll" style="width: 120px; height: 120px; font-size: 24px; color: var(--primary); background: var(--bg-light);">
+                    SAP
+                </div>
+                <div class="tech-logo reveal-on-scroll" style="width: 120px; height: 120px; font-size: 24px; color: var(--primary); background: var(--bg-light); display: flex; flex-direction: column; text-align: center; font-size: 16px; padding: 10px;">
+                    <i class="ph ph-cpu" style="font-size: 40px; margin-bottom: 8px;"></i>
+                    RFID & IoT
+                </div>
+                <div class="tech-logo reveal-on-scroll" style="width: 120px; height: 120px; font-size: 24px; color: var(--primary); background: var(--bg-light); display: flex; flex-direction: column; text-align: center; font-size: 16px; padding: 10px;">
+                    <i class="ph ph-device-mobile" style="font-size: 40px; margin-bottom: 8px;"></i>
+                    ТСД
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 6: Awards -->
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll" data-i18n="awards_recognition">Награды и признание</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="case-award-badge reveal-on-scroll" style="font-size: 18px; padding: 20px;">
+                    <i class="ph ph-medal" style="font-size: 40px;"></i>
+                    <div class="case-award-text" style="font-size: 18px; color: var(--text-dark);">
+                        <strong>Finalist RFID Journal Award 2022</strong> (категория «Best Use of RFID in Retail/Consumer Goods»).
+                    </div>
+                </div>
+                <div class="case-award-badge reveal-on-scroll" style="font-size: 18px; padding: 20px;">
+                    <i class="ph ph-globe-hemisphere-west" style="font-size: 40px; color: var(--primary);"></i>
+                    <div class="case-award-text" style="font-size: 18px; color: var(--text-dark);">
+                        Участник международных выставок (например, KIOGE, Mining & Metals).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="i18n.js"></script>
+    <script>
+        // Scroll reveal animation script
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal-on-scroll');
+            
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                const elementVisible = 100;
+                
+                reveals.forEach(reveal => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveal.classList.add('visible');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', checkReveal);
+            checkReveal(); // Trigger once on load
+        });
+    </script>
+</body>
+
+</html>

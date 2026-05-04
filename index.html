@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-услуги и автоматизация бизнеса в Алматы | ABITECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="ABITECH Logo">
+            </a>
+
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#" data-i18n="home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="#products" data-i18n="products">Продукты <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products/mobile-toir.html" data-i18n="mobile_mro">Мобильный ТОиР</a></li>
+                        <li><a href="products/rfid.html" data-i18n="rfid_workwear">RFID и спецодежда</a></li>
+                        <li><a href="products/ai-connector.html" data-i18n="ai_connector">ИИ-коннектор</a></li>
+                        <li><a href="products/wms.html" data-i18n="wms">WMS</a></li>
+                        <li><a href="products/bi.html" data-i18n="bi_solutions">BI-решения</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#industries" data-i18n="industries">Отрасли <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="industries/oil-gas.html" data-i18n="oil_gas_title">Нефтегаз</a></li>
+                        <li><a href="industries/mining.html" data-i18n="mining">Угольная промышленность</a></li>
+                        <li><a href="industries/metallurgy.html" data-i18n="metallurgy">Металлургия</a></li>
+                        <li><a href="industries/logistics.html" data-i18n="logistics">Логистика</a></li>
+                        <li><a href="industries/energy.html" data-i18n="energy">Энергетика</a></li>
+                    </ul>
+                </li>
+                <li><a href="#cases" data-i18n="cases">Кейсы</a></li>
+                <li><a href="about.html" data-i18n="about_us">О компании</a></li>
+                <li><a href="contacts.html" data-i18n="contacts">Контакты</a></li>
+                <li>
+                    <div class="lang-switcher" style="margin-left: 20px;">
+                        <span class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')" data-i18n="lang_ru">RU</span>|
+                        <span class="lang-btn" data-lang="kz" onclick="changeLanguage('kz')" data-i18n="lang_kz">KZ</span>|
+                        <span class="lang-btn" data-lang="en" onclick="changeLanguage('en')" data-i18n="lang_en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-enhancer" data-i18n="transforming_chaos">Превращаем хаос в управляемую систему</div>
+            <h1 data-i18n="digital_automation">Цифровая автоматизация бизнеса и производства</h1>
+            <p class="hero-subtitle">Разработка ПО, внедрение WMS и комплексная автоматизация предприятий в Казахстане.
+                Опыт более 20 лет</p>
+            <div class="hero-buttons">
+                <a href="#contacts" class="btn btn-primary" data-i18n="start_digitalization">Начать цифровизацию</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span data-i18n="scroll_down">Скролл вниз</span>
+            <i class="ph ph-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- Industries Section -->
+    <section class="section industries" id="industries">
+        <div class="container">
+            <h2 class="section-title" data-i18n="industries_who_we_help">Отрасли / Кому мы помогаем</h2>
+            <!-- Industry Row 1: Oil & Gas -->
+            <div class="industry-row">
+                <div class="industry-header">
+                    <i class="ph ph-drop"></i>
+                    <h2 data-i18n="oil_gas_title">Нефтегазовый сектор</h2>
+                </div>
+                <div class="pain-solution-pair">
+                    <div class="card-pain">
+                        <div class="pair-label">
+                            <span class="pair-icon">⚠️</span> Проблема
+                        </div>
+                        <div class="pair-text">Потери и отсутствие прозрачного учёта активов на всех этапах добычи и
+                            переработки.</div>
+                    </div>
+                    <div class="card-solution">
+                        <div class="pair-label">
+                            <span class="pair-icon">✅</span> Решение
+                        </div>
+                        <div class="pair-text">RFID-маркировка и система цифрового учёта для 100% прозрачности
+                            перемещений ТМЦ.</div>
+                    </div>
+                </div>
+                <a href="industries/oil-gas.html" class="card-cta" data-i18n="more_about_industry">Подробнее об отраслевом решении <i
+                        class="ph ph-arrow-right"></i></a>
+            </div>
+
+            <div class="industry-row">
+                <div class="industry-header">
+                    <i class="ph ph-mountains"></i>
+                    <h3 data-i18n="equipment_control_downtime">Контроль техники и снижение простоев в угольной добыче</h3>
+                </div>
+                <div class="pain-solution-pair">
+                    <div class="card-pain">
+                        <div class="pair-label">
+                            <span class="pair-icon">⚠️</span> Проблема
+                        </div>
+                        <div class="pair-text">Простои карьерной техники и отсутствие точного контроля перемещений на
+                            разрезах и в шахтах.</div>
+                    </div>
+                    <div class="card-solution">
+                        <div class="pair-label">
+                            <span class="pair-icon">✅</span> Решение
+                        </div>
+                        <div class="pair-text">Мониторинг техники в реальном времени, RFID-учёт активов и
+                            интеллектуальные системы безопасности.</div>
+                    </div>
+                </div>
+                <a href="#contacts" class="btn btn-primary" style="margin-top: 20px; display: inline-block;" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+
+            <!-- Industry Row 3: Metallurgy -->
+            <div class="industry-row">
+                <div class="industry-header">
+                    <i class="ph ph-factory"></i>
+                    <h3 data-i18n="control_production_losses">Контроль производства и снижение потерь в металлургии</h3>
+                </div>
+                <div class="pain-solution-pair">
+                    <div class="card-pain">
+                        <div class="pair-label">
+                            <span class="pair-icon">⚠️</span> Проблема
+                        </div>
+                        <div class="pair-text">Разрозненные производственные данные и отсутствие системы единого
+                            контроля эффективности.</div>
+                    </div>
+                    <div class="card-solution">
+                        <div class="pair-label">
+                            <span class="pair-icon">✅</span> Решение
+                        </div>
+                        <div class="pair-text">Бесшовная интеграция ИТ-систем и ИИ-аналитика для поиска узких мест и
+                            оптимизации процессов.</div>
+                    </div>
+                </div>
+                <a href="#contacts" class="btn btn-primary" style="margin-top: 20px; display: inline-block;" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+
+            <!-- Industry Row 4: Logistics -->
+            <div class="industry-row">
+                <div class="industry-header">
+                    <i class="ph ph-truck"></i>
+                    <h3 data-i18n="control_warehouse_operations">Контроль складских операций и снижение потерь</h3>
+                </div>
+                <div class="pain-solution-pair">
+                    <div class="card-pain">
+                        <div class="pair-label">
+                            <span class="pair-icon">⚠️</span> Проблема
+                        </div>
+                        <div class="pair-text" data-i18n="high_risk_errors">Высокий риск ошибок комплектации, задержки отгрузок и потери на складах.
+                        </div>
+                    </div>
+                    <div class="card-solution">
+                        <div class="pair-label">
+                            <span class="pair-icon">✅</span> Решение
+                        </div>
+                        <div class="pair-text">Внедрение современных WMS-систем и IoT-контроль складских операций в
+                            режиме real-time.</div>
+                    </div>
+                </div>
+                <a href="#contacts" class="btn btn-primary" style="margin-top: 20px; display: inline-block;" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+
+            <!-- Industry Row 5: Energy -->
+            <div class="industry-row">
+                <div class="industry-header">
+                    <i class="ph ph-lightning"></i>
+                    <h3 data-i18n="reduction_equipment_downtime">Снижение простоев оборудования в энергетике</h3>
+                </div>
+                <div class="pain-solution-pair">
+                    <div class="card-pain">
+                        <div class="pair-label">
+                            <span class="pair-icon">⚠️</span> Проблема
+                        </div>
+                        <div class="pair-text">Непредсказуемые простои из-за поломок и отсутствие объективных данных о
+                            состоянии оборудования.</div>
+                    </div>
+                    <div class="card-solution">
+                        <div class="pair-label">
+                            <span class="pair-icon">✅</span> Решение
+                        </div>
+                        <div class="pair-text">Мобильный ТОиР и предиктивная видеоаналитика для мониторинга износа и
+                            планирования ремонтов.</div>
+                    </div>
+                </div>
+                <a href="#contacts" class="btn btn-primary" style="margin-top: 20px; display: inline-block;" data-i18n="btn_discuss">Обсудить проект</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="quiz_title">Узнайте эффективность автоматизации для вашего предприятия</h2>
+            <div class="quiz-container" id="quiz-container">
+                <!-- Step 1 -->
+                <div class="quiz-step active" data-step="1">
+                    <h3 class="quiz-question" data-i18n="quiz_q1">Какая ваша основная задача?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="mro"><i class="ph ph-wrench"></i> <span data-i18n="quiz_q1_a1">Оптимизация ТОиР</span></div>
+                        <div class="quiz-option" data-value="inventory"><i class="ph ph-barcode"></i> <span data-i18n="quiz_q1_a2">Инвентаризация активов</span></div>
+                        <div class="quiz-option" data-value="wms"><i class="ph ph-package"></i> <span data-i18n="quiz_q1_a3">Автоматизация склада</span></div>
+                        <div class="quiz-option" data-value="ppe"><i class="ph ph-shield-check"></i> <span data-i18n="quiz_q1_a4">Контроль СИЗ</span></div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="quiz-step" data-step="2">
+                    <h3 class="quiz-question" data-i18n="quiz_q2">Какую отрасль вы представляете?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="oil"><i class="ph ph-drop"></i> <span data-i18n="quiz_q2_a1">Нефтегаз</span></div>
+                        <div class="quiz-option" data-value="mining"><i class="ph ph-mountains"></i> <span data-i18n="quiz_q2_a2">Угольная пром-сть</span></div>
+                        <div class="quiz-option" data-value="metallurgy"><i class="ph ph-factory"></i> <span data-i18n="quiz_q2_a3">Металлургия</span></div>
+                        <div class="quiz-option" data-value="logistics"><i class="ph ph-truck"></i> <span data-i18n="quiz_q2_a4">Логистика / Энергетика</span></div>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="quiz-step" data-step="3">
+                    <h3 class="quiz-question" data-i18n="quiz_q3">Масштаб вашего предприятия?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="small"><i class="ph ph-users"></i> <span data-i18n="quiz_q3_a1">До 100 сотрудников</span></div>
+                        <div class="quiz-option" data-value="medium"><i class="ph ph-users-four"></i> <span data-i18n="quiz_q3_a2">100-500 сотрудников</span></div>
+                        <div class="quiz-option" data-value="large"><i class="ph ph-buildings"></i> <span data-i18n="quiz_q3_a3">Более 500 сотрудников</span></div>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="quiz-step" data-step="4">
+                    <h3 class="quiz-question" data-i18n="quiz_q4">Какие технологии вас интересуют?</h3>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-value="rfid"><i class="ph ph-broadcast"></i> <span data-i18n="quiz_q4_a1">RFID и IoT</span></div>
+                        <div class="quiz-option" data-value="ai"><i class="ph ph-brain"></i> <span data-i18n="quiz_q4_a2">ИИ-аналитика</span></div>
+                        <div class="quiz-option" data-value="wms"><i class="ph ph-layout"></i> <span data-i18n="quiz_q4_a3">WMS системы</span></div>
+                        <div class="quiz-option" data-value="mobile"><i class="ph ph-device-mobile"></i> <span data-i18n="quiz_q4_a4">Мобильные решения</span></div>
+                    </div>
+                </div>
+                <!-- Final Step -->
+                <div class="quiz-step" data-step="final">
+                    <h3 class="quiz-question" data-i18n="quiz_final_title">Почти готово! Оставьте контакты для получения расчета</h3>
+                    <form class="quiz-final-form" id="quiz-form">
+                        <input type="text" placeholder="Имя" data-i18n-placeholder="name" required class="full-width" style="margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        <input type="tel" placeholder="Телефон" data-i18n-placeholder="phone" required class="full-width" style="margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        <input type="email" placeholder="Email" data-i18n-placeholder="email" required class="full-width" style="margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                        <button type="submit" class="btn btn-primary full-width" data-i18n="quiz_submit_btn">Получить результат и расчет</button>
+                    </form>
+                </div>
+                <!-- Success Step -->
+                <div class="quiz-step" data-step="success">
+                    <div class="quiz-success-icon"><i class="ph ph-check-circle"></i></div>
+                    <h3 class="quiz-question" data-i18n="quiz_success_title">Спасибо! Мы готовим ваш расчет</h3>
+                    <div class="quiz-bonus-box">
+                        <p data-i18n="quiz_bonus_text">Пока мы работаем, вы можете скачать полезный материал:</p>
+                        <a href="assets/checklist_toir.pdf" class="btn btn-secondary" style="margin-top: 15px;" data-i18n="get_checklist">Получить чек-лист</a>
+                    </div>
+                </div>
+
+                <div class="quiz-footer" id="quiz-footer">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                    </div>
+                    <button class="quiz-btn quiz-btn-next" id="quiz-next-btn" disabled data-i18n="quiz_next_btn">Далее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <h2 class="section-title" data-i18n="products">Продукты</h2>
+            <div class="grid-3">
+                <!-- Product 1: Mobile MRO -->
+                <div class="card product-card">
+                    <i class="ph ph-wrench" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 data-i18n="mobile_mro">Мобильный ТОиР</h3>
+                    <p data-i18n="digital_management_equipment">Цифровое управление обслуживанием оборудования</p>
+                    <a href="products/mobile-toir.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <!-- Product 2: RFID -->
+                <div class="card product-card">
+                    <i class="ph ph-broadcast" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3>RFID-решения</h3>
+                    <p data-i18n="asset_equipment_ppe">Учёт активов, оборудования и спецодежды</p>
+                    <a href="products/rfid.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <!-- Product 3: PPE -->
+                <div class="card product-card">
+                    <i class="ph ph-shield-check"
+                        style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 data-i18n="ppe_tracking">Учёт спецодежды</h3>
+                    <p data-i18n="control_issuance_ppe">Контроль выдачи и сроков эксплуатации СИЗ</p>
+                    <a href="products/ppe.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <!-- Product 4: AI Connector -->
+                <div class="card product-card">
+                    <i class="ph ph-plugs-connected"
+                        style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 data-i18n="ai_connector">ИИ-коннектор</h3>
+                    <p data-i18n="data_integration_exchange">Интеграция и обмен данными между системами</p>
+                    <a href="products/ai-connector.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <!-- Product 5: WMS -->
+                <div class="card product-card">
+                    <i class="ph ph-warehouse" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 data-i18n="wms">WMS</h3>
+                    <p data-i18n="warehouse_automation">Автоматизация складских процессов</p>
+                    <a href="products/wms.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+                <!-- Product 6: BI -->
+                <div class="card product-card">
+                    <i class="ph ph-chart-bar" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 data-i18n="bi_solutions">BI-решения</h3>
+                    <p data-i18n="material_flow_control">Контроль материальных потоков и данных</p>
+                    <a href="products/bi.html" class="btn-link" data-i18n="read_more">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section class="section cases" id="cases" style="background-color: var(--bg-light); padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title" data-i18n="cases_and_results">Кейсы и результаты</h2>
+
+            <!-- Cards 1-3 -->
+            <div class="grid-3" style="margin-bottom: 32px;">
+                <!-- Case 1: KTZh -->
+                <div class="case-card">
+                    <div class="case-stat-badge" data-i18n="security">Безопасность</div>
+                    <h3 style="font-size: 18px; margin-bottom: 12px;" data-i18n="ktzh">Қазақстан Темір Жолы (КТЖ)</h3>
+                    <div class="case-content" style="margin-top: 16px;">
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="task">Задача</span>
+                            <div class="case-text">Зависимость от человеческого фактора при обслуживании систем,
+                                бумажная отчетность.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="solution">Решение</span>
+                            <div class="case-text">Внедрение «АСКОУ – ТОИР». Автоматизация планирования, фотофиксация
+                                неисправностей.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="result">Результат</span>
+                            <div class="case-text">Мониторинг в реальном времени, исключение ошибок ручного ввода
+                                данных.</div>
+                        </div>
+                    </div>
+                    <a href="cases/ktzh.html" class="btn-case"
+                        style="margin-top: 24px; display: inline-block;">Подробнее &rarr;</a>
+                </div>
+
+                <!-- Case 2: Kazaeronavigatsia -->
+                <div class="case-card">
+                    <div class="case-stat-badge">RFID Award</div>
+                    <h3 style="font-size: 18px; margin-bottom: 12px;">РГП «Казаэронавигация»</h3>
+                    <div class="case-content" style="margin-top: 16px;">
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="task">Задача</span>
+                            <div class="case-text">Сложность контроля инженеров на удаленных объектах, задержки в
+                                отчетности.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="solution">Решение</span>
+                            <div class="case-text">«АСКОУ – ТОИР» с функциями онлайн-контроля местоположения.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="result">Результат</span>
+                            <div class="case-text">Прозрачное планирование. Признание на RFID Journal Award (США).</div>
+                        </div>
+                    </div>
+                    <a href="cases/kazaeronavigatsia.html" class="btn-case"
+                        style="margin-top: 24px; display: inline-block;">Подробнее &rarr;</a>
+                </div>
+
+                <!-- Case 3: KMG -->
+                <div class="case-card">
+                    <div class="case-stat-badge">Надежность</div>
+                    <h3 style="font-size: 18px; margin-bottom: 12px;">АО «НК «КазМунайГаз»</h3>
+                    <div class="case-content" style="margin-top: 16px;">
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="task">Задача</span>
+                            <div class="case-text">Огромный объем распределенных активов. Низкая точность ручной
+                                инвентаризации.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="solution">Решение</span>
+                            <div class="case-text">«АСКОУ – Инвентаризация» и «ТОИР». Оцифровка тысяч единиц
+                                оборудования.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="result">Результат</span>
+                            <div class="case-text">Оперативный контроль активов, сокращение сбоев. Награда RFID Award
+                                2022.</div>
+                        </div>
+                    </div>
+                    <a href="cases/kmg.html" class="btn-case" style="margin-top: 24px; display: inline-block;">Подробнее
+                        &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Cards 4-5 -->
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 800px; margin: 0 auto;">
+                <!-- Case 4: KazTransOil -->
+                <div class="case-card">
+                    <div class="case-stat-badge">100% Учет</div>
+                    <h3 style="font-size: 18px; margin-bottom: 12px;">АО «КазТрансОйл»</h3>
+                    <div class="case-content" style="margin-top: 16px;">
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="task">Задача</span>
+                            <div class="case-text">Неактуальные данные о местонахождении ОС, отсутствие интеграции.
+                            </div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="solution">Решение</span>
+                            <div class="case-text">«АСКОУ – Инвентаризация» с RFID-метками и бесшовной интеграцией с
+                                SAP.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="result">Результат</span>
+                            <div class="case-text">100% идентификация ОС, выявление излишков и недостач.</div>
+                        </div>
+                    </div>
+                    <a href="cases/kaztransoil.html" class="btn-case"
+                        style="margin-top: 24px; display: inline-block;">Подробнее &rarr;</a>
+                </div>
+
+                <!-- Case 5: Shatyr -->
+                <div class="case-card">
+                    <div class="case-stat-badge">Минимизация потерь</div>
+                    <h3 style="font-size: 18px; margin-bottom: 12px;">ТОО «Шатыр»</h3>
+                    <div class="case-content" style="margin-top: 16px;">
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="task">Задача</span>
+                            <div class="case-text">Учет 700 000 ед. мягкого инвентаря приводил к огромным потерям.</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="solution">Решение</span>
+                            <div class="case-text">RFID для контроля цепочки (стирка – склад – поезд).</div>
+                        </div>
+                        <div class="case-step">
+                            <span class="case-label" data-i18n="result">Результат</span>
+                            <div class="case-text">Мгновенный учет комплектации при передаче проводникам. Финалист RFID
+                                Award 2022.</div>
+                        </div>
+                    </div>
+                    <a href="cases/shatyr.html" class="btn-case"
+                        style="margin-top: 24px; display: inline-block;">Подробнее &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Global Stats Box -->
+            <div
+                style="background: var(--text-dark); border-radius: 16px; padding: 48px; margin-top: 60px; color: var(--white); box-shadow: 0 12px 32px rgba(0,0,0,0.1);">
+                <h3 style="text-align: center; margin-bottom: 40px; font-size: 24px; font-weight: 600;">Доказанный
+                    экономический эффект</h3>
+                <div class="grid-4" style="text-align: center; gap: 24px;">
+                    <div>
+                        <div style="font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 8px;">
+                            10–30%</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.8);">Сокращение затрат<br>на ТОиР</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 8px;">
+                            20–50%</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.8);">Повышение эффективности<br>персонала
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 8px;">
+                            10–20%</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.8);">Увеличение межремонтных<br>периодов
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 8px;" data-i18n="to_0">до 0
+                        </div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.8);">Сокращение аварийных<br>ситуаций
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recognition Gallery -->
+            <div style="margin-top: 80px;">
+                <h2 class="section-title" data-i18n="letters_of_appreciation">Благодарственные письма и отзывы</h2>
+                <p style="text-align: center; margin-bottom: 48px; font-size: 16px; color: var(--text-gray);">Нам
+                    доверяют лидеры промышленности и бизнеса</p>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto;">
+                    <img src="assets/cases/letter-1.jpg" alt="Отзыв 1" onclick="openModal(this.src)"
+                        style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s; cursor: pointer;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                        onerror="this.src='https://placehold.co/400x560?text=Скан+отзыва'">
+                    <img src="assets/cases/letter-2.jpg" alt="Отзыв 2" onclick="openModal(this.src)"
+                        style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s; cursor: pointer;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                        onerror="this.src='https://placehold.co/400x560?text=Скан+отзыва'">
+                    <img src="assets/cases/letter-3.jpg" alt="Отзыв 3" onclick="openModal(this.src)"
+                        style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s; cursor: pointer;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                        onerror="this.src='https://placehold.co/400x560?text=Скан+отзыва'">
+                    <img src="assets/cases/letter-4.jpg" alt="Отзыв 4" onclick="openModal(this.src)"
+                        style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s; cursor: pointer;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                        onerror="this.src='https://placehold.co/400x560?text=Скан+отзыва'">
+                    <img src="assets/cases/letter-5.jpg" alt="Отзыв 5" onclick="openModal(this.src)"
+                        style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s; cursor: pointer;"
+                        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                        onerror="this.src='https://placehold.co/400x560?text=Скан+отзыва'">
+                </div>
+
+                <!-- Fullscreen Image Modal -->
+                <div id="imageModal"
+                    style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;"
+                    onclick="closeModal()">
+                    <span
+                        style="position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; transition: 0.3s;"
+                        onmouseover="this.style.color='#bbb'" onmouseout="this.style.color='#fff'">&times;</span>
+                    <img class="modal-content" id="modalImg"
+                        style="display: block; width: auto; max-width: 90vw; height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); transform: scale(0.8); transition: transform 0.3s ease; margin: 0 auto;">
+                </div>
+
+                <script>
+                    function openModal(src) {
+                        var modal = document.getElementById("imageModal");
+                        var modalImg = document.getElementById("modalImg");
+                        modalImg.src = src;
+                        modal.style.display = "flex";
+                        // trigger reflow
+                        void modal.offsetWidth;
+                        modal.style.opacity = "1";
+                        modalImg.style.transform = "scale(1)";
+                    }
+                    function closeModal() {
+                        var modal = document.getElementById("imageModal");
+                        var modalImg = document.getElementById("modalImg");
+                        modal.style.opacity = "0";
+                        modalImg.style.transform = "scale(0.8)";
+                        setTimeout(() => modal.style.display = "none", 300);
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="section why-us" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="why_abitech">Почему ABITECH</h2>
+            <div class="why-grid" style="margin-top: 40px;">
+                <div class="card why-card">
+                    <i class="ph ph-timer card-icon-primary"></i>
+                    <h3 data-i18n="20_years_experience">20+ лет опыта</h3>
+                    <p>Автоматизация предприятий в Казахстане и промышленной сфере.</p>
+                </div>
+                <div class="card why-card">
+                    <i class="ph ph-cpu card-icon-primary"></i>
+                    <h3 data-i18n="in_house_development">Собственная разработка</h3>
+                    <p>Решения под ваши процессы, а не коробочные ограничения.</p>
+                </div>
+                <div class="card why-card">
+                    <i class="ph ph-plugs-connected card-icon-primary"></i>
+                    <h3 data-i18n="deep_integration">Глубокая интеграция</h3>
+                    <p>Объединяем 1С, SAP, ERP и оборудование в единую систему.</p>
+                </div>
+                <div class="card why-card">
+                    <i class="ph ph-factory card-icon-primary"></i>
+                    <h3 data-i18n="industry_expertise">Экспертиза в промышленности</h3>
+                    <p>Энергетика, нефтегаз, металлургия, логистика.</p>
+                </div>
+                <div class="card why-card">
+                    <i class="ph ph-trophy card-icon-primary"></i>
+                    <h3 data-i18n="international_experience">Международный опыт</h3>
+                    <p>Участие и победы в технологических конкурсах.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="about.html" class="btn btn-secondary" data-i18n="more_about_company">Подробнее о компании</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="section technologies">
+        <div class="container">
+            <h2 class="section-title" data-i18n="technologies_integrations">Технологии и интеграции</h2>
+            <p class="section-subtitle" data-i18n="integrations_transparent">Интеграции, которые делают процессы прозрачными</p>
+            <div class="flex-center technologies-grid">
+                <div class="tech-logo">1С</div>
+                <div class="tech-logo">ERP</div>
+                <div class="tech-logo">BI</div>
+                <div class="tech-logo">RFID</div>
+                <div class="tech-logo">IoT</div>
+                <div class="tech-logo">AI</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Magnets Section -->
+    <section class="section lead-magnets">
+        <div class="container">
+            <h2 class="section-title" data-i18n="useful_materials">Полезные материалы</h2>
+            <div class="magnet-grid">
+                <!-- Magnet 1 -->
+                <div class="card magnet-card">
+                    <h3 data-i18n="mro_checklist">Чек-лист ТОиР</h3>
+                    <p data-i18n="check_efficiency_equipment">Проверьте эффективность обслуживания оборудования.</p>
+                    <button class="btn btn-magnet" onclick="alert('Заявка отправлена!')" data-i18n="get_checklist">Получить чек-лист</button>
+                </div>
+                <!-- Magnet 2 -->
+                <div class="card magnet-card">
+                    <h3 data-i18n="ppe_audit">Аудит учёта спецодежды</h3>
+                    <p>Найдите потери и слабые места в учёте СИЗ.</p>
+                    <button class="btn btn-magnet" onclick="alert('Заявка отправлена!')" data-i18n="take_audit">Пройти аудит</button>
+                </div>
+                <!-- Magnet 3 -->
+                <div class="card magnet-card">
+                    <h3 data-i18n="wms_calculator">Калькулятор WMS</h3>
+                    <p>Рассчитайте эффект от внедрения складской системы.</p>
+                    <button class="btn btn-magnet" onclick="alert('Заявка отправлена!')" data-i18n="calculate">Рассчитать</button>
+                </div>
+                <!-- Magnet 4 -->
+                <div class="card magnet-card">
+                    <h3 data-i18n="integration_estimate">Оценка интеграции</h3>
+                    <p>Поймите, как объединить 1С, ERP и оборудование.</p>
+                    <button class="btn btn-magnet" onclick="alert('Заявка отправлена!')" data-i18n="get_estimate">Получить оценку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contacts">
+        <div class="container">
+            <h2 class="section-title" data-i18n="leave_request">Оставьте заявку</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Имя" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" required>
+                <input type="text" placeholder="Компания" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" required>
+                <input type="tel" placeholder="Телефон" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" required>
+                <input type="email" placeholder="Email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" required>
+                <input type="text" placeholder="Кратко\ задача" data-i18n-placeholder="brief_task">
+                <button type="submit" class="btn btn-primary full-width" data-i18n="btn_discuss">Обсудить проект</button>
+            </form>
+            <div class="contact-links">
+                <a href="tel:#" class="contact-link-item phone">
+                    <i class="ph ph-phone"></i> +7 (XXX) XXX-XX-XX
+                </a>
+                <a href="mailto:info@abitech.kz" class="contact-link-item email">
+                    <i class="ph ph-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/#" target="_blank" class="contact-link-item whatsapp">
+                    <i class="ph ph-whatsapp-logo"></i> WhatsApp
+                </a>
+                <a href="https://t.me/abitechkz" target="_blank" class="contact-link-item telegram">
+                    <i class="ph ph-telegram-logo"></i> Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Lead Form -->
+    <div id="magnetModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Получить материал</h3>
+            <p>Оставьте ваши контакты, и мы отправим вам выбранный файл или ссылку на инструмент.</p>
+            <form id="magnetForm" class="modal-form">
+                <input type="text" id="modalName" placeholder="Ваше имя" required>
+                <input type="tel" id="modalPhone" placeholder="Телефон" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" required>
+                <input type="email" id="modalEmail" placeholder="Email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" required>
+                <button type="submit" class="btn btn-primary" data-i18n="send_and_receive">Отправить и получить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <script src="i18n.js"></script>
+</body>
+
+</html>

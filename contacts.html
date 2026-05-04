@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты офиса в Алматы | ABITECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="ABITECH Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-i18n="home">Главная</a></li>
+                <li class="dropdown">
+                    <a href="index.html#products" data-i18n="products">Продукты <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products/mobile-toir.html" data-i18n="mobile_mro">Мобильный ТОиР</a></li>
+                        <li><a href="products/rfid.html" data-i18n="rfid_workwear">RFID и спецодежда</a></li>
+                        <li><a href="products/ai-connector.html" data-i18n="ai_connector">ИИ-коннектор</a></li>
+                        <li><a href="products/wms.html" data-i18n="wms">WMS</a></li>
+                        <li><a href="products/bi.html" data-i18n="bi_solutions">BI-решения</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html#industries" data-i18n="industries">Отрасли <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="industries/oil-gas.html" data-i18n="oil_gas_title">Нефтегаз</a></li>
+                        <li><a href="industries/mining.html" data-i18n="mining">Угольная промышленность</a></li>
+                        <li><a href="industries/metallurgy.html" data-i18n="metallurgy">Металлургия</a></li>
+                        <li><a href="industries/logistics.html" data-i18n="logistics">Логистика</a></li>
+                        <li><a href="industries/energy.html" data-i18n="energy">Энергетика</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#cases" data-i18n="cases">Кейсы</a></li>
+                <li><a href="about.html" data-i18n="about_us">О компании</a></li>
+                <li><a href="contacts.html" data-i18n="contacts">Контакты</a></li>
+                <li>
+                    <div class="lang-switcher" style="margin-left: 20px;">
+                        <span class="lang-btn active" data-lang="ru" onclick="changeLanguage('ru')" data-i18n="lang_ru">RU</span>|
+                        <span class="lang-btn" data-lang="kz" onclick="changeLanguage('kz')" data-i18n="lang_kz">KZ</span>|
+                        <span class="lang-btn" data-lang="en" onclick="changeLanguage('en')" data-i18n="lang_en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Block 1: Hero -->
+    <header class="hero hero-contacts">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Готовы обсудить ваш проект?</h1>
+            <p class="hero-subtitle">Напишите нам или позвоните. Наши эксперты на связи и готовы погрузиться в ваши
+                бизнес-задачи.</p>
+        </div>
+    </header>
+
+    <!-- Block 2: Contact Info -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Контактная информация</h2>
+            <div class="grid-3">
+                <div class="card" style="text-align: center;">
+                    <i class="ph ph-phone" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 style="font-size: 18px; margin-bottom: 8px;" data-i18n="phone">Телефон</h3>
+                    <p style="font-size: 18px;"><a href="#" style="text-decoration: none; color: inherit;">+7 (XXX)
+                            XXX-XX-XX</a></p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <i class="ph ph-envelope" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 style="font-size: 18px; margin-bottom: 8px;" data-i18n="email">Email</h3>
+                    <p style="font-size: 18px;"><a href="mailto:info@abitech.kz"
+                            style="text-decoration: none; color: inherit;">info@abitech.kz</a></p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <i class="ph ph-map-pin" style="font-size: 40px; color: var(--primary); margin-bottom: 16px;"></i>
+                    <h3 style="font-size: 18px; margin-bottom: 8px;">Офис</h3>
+                    <p style="font-size: 18px;">Алматы, ул. Мустай Карим, 13А</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 3: Feedback Form -->
+    <section class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="leave_request">Оставьте заявку</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Имя" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" data-i18n-placeholder="name" required>
+                <input type="text" placeholder="Компания" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" data-i18n-placeholder="company" required>
+                <input type="tel" placeholder="Телефон" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" data-i18n-placeholder="phone" required>
+                <input type="email" placeholder="Email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" data-i18n-placeholder="email" required>
+                <input type="text" placeholder="Краткое описание задачи">
+                <button type="submit" class="btn btn-primary full-width">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Block 4: Quick Contacts -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title" style="font-size: 24px; margin-bottom: 24px;">Быстрые контакты</h2>
+            <div class="contact-links" style="margin-top: 0;">
+                <a href="tel:#" data-i18n="phone">Телефон</a>
+                <a href="mailto:info@abitech.kz" data-i18n="email">Email</a>
+                <a href="https://wa.me/#" target="_blank">WhatsApp</a>
+                <a href="https://t.me/abitechkz" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="i18n.js"></script>
+</body>
+
+</html>
